@@ -1,0 +1,6 @@
+markdown: rdiscount
+permalink: /:year/:month/:title/
+baseurl: /lazycat
+author: layzycat2z
+pygments: true
+paginate: 16
