@@ -4,7 +4,7 @@ layout: page
 comments: yes
 ---
   
-> "Lazycat,
+>Lazycat,
 	QL领养的一只小怪猫。
 	奶名，lazycat2z。
 	和他主人一样。
