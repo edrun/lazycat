@@ -7,7 +7,7 @@ layout: default
 </section>
 <section class="meta">
 <span class="author">
-  <a href="http://geeklu.com">{{ site.author }}</a>
+  <a href="http://edrun.github.io/lazycat">{{ site.author }}</a>
 </span>
 <span class="time">
   /
@@ -21,7 +21,7 @@ layout: default
 <span class="categories">
   in categories
   {% for cat in page.categories %}
-  <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+  <a href="/lazycat/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
   {% endfor %}
 </span>
 {% endif %}
@@ -41,12 +41,12 @@ $(function(){
     var url = false;
         if (e.which == 37 || e.which == 74) {  // Left arrow and J
             {% if page.previous %}
-        url = '{{ site.url }}{{ page.previous.url }}';
+        url = '/lazycat/{{ page.previous.url }}';
         {% endif %}
         }
         else if (e.which == 39 || e.which == 75) {  // Right arrow and K
             {% if page.next %}
-        url = '{{ site.url }}{{ page.next.url }}';
+        url = '{/lazycat/{{ page.next.url }}';
         {% endif %}
         }
         if (url) {
