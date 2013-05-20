@@ -14,5 +14,6 @@ comments: yes
 
 [LinuxNow](http://www.linuxnow.com/)
 
-[资源结合帖](http://i-math.sysu.edu.cn/os/about/websites.html)
+[资源结合帖](http://i-math.sysu.edu.cn/os/about/websites.htm)
+
 
