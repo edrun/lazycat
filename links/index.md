@@ -4,14 +4,15 @@ layout: page
 comments: yes
 ---
 
->[Linux Today](http://www.linuxtoday.com/)
+[Linux Today](http://www.linuxtoday.com/)
 
->[LFS](http://www.linuxfromscratch.org/)
+[LFS](http://www.linuxfromscratch.org/)
 
->[Linuxfocus](http://www.linuxfocus.org/)
+[Linuxfocus](http://www.linuxfocus.org/)
 
->[LinuxJourny](http://www.linuxjournal.com/)
+[LinuxJourny](http://www.linuxjournal.com/)
 
->[LinuxNow](http://www.linuxnow.com/)
+[LinuxNow](http://www.linuxnow.com/)
 
->[资源结合帖](http://i-math.sysu.edu.cn/os/about/websites.html)
+[资源结合帖](http://i-math.sysu.edu.cn/os/about/websites.html)
+
