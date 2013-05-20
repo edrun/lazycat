@@ -1,5 +1,5 @@
 markdown: rdiscount
-permalink: /:year/:month/:title/
+permalink: /:year/:month/:day/:title.html
 baseurl: /lazycat
 author: layzycat2z
 pygments: true
