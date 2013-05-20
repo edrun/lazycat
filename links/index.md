@@ -11,6 +11,9 @@ comments: yes
 >[LinuxJourny](http://www.linuxjournal.com/)
 >[LinuxNow](http://www.linuxnow.com/)
 
-[资源结合帖](http://i-math.sysu.edu.cn/os/about/websites.htm)
+[资源结合帖]
+
+[Linux资源集结号](http://i-math.sysu.edu.cn/os/about/websites.htm)
+
 
 
