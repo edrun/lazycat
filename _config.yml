@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /:year/:month/:day/:title.html
-baseurl: /lazycat
+url: http://edrun.github.io/lazycat
 author: layzycat2z
 pygments: true
 paginate: 16
