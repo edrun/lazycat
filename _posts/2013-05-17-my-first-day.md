@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Lazycat's translation trip
+comments: yes
 categories:
 - intro
 tags:
