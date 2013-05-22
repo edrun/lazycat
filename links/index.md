@@ -16,6 +16,9 @@ comments: yes
 
 >[Linux资源集结号](http://i-math.sysu.edu.cn/os/about/websites.htm)
 
+[翻译原文主站点]
+
+[adafruits](http://learn.adafruit.com/)
 
 
 
