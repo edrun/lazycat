@@ -20,5 +20,9 @@ comments: yes
 
 [adafruits](http://learn.adafruit.com/)
 
+[http://raspberrypi.stackexchange.com/](http://raspberrypi.stackexchange.com/)
+
+[raspi.tv](http://raspi.tv/)
+
 
 
