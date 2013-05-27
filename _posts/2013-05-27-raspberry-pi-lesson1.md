@@ -15,7 +15,7 @@ tags:
 当你买树莓派的时候，有可能没有SD卡。
 SD卡非常重要，它用于存放你的文件和程序。
 
- <span class="image-1200">[![](http://edrun.github.io/lazycat/05/raspberry/rasp-1.jpg)](http://500px.com/photo/29307621)</span>
+ <span class="image-1200">[![](./05/raspberry/rasp-1.jpg)](http://500px.com/photo/29307621)</span>
 
 假如你的树莓派已经有了sd卡，并且已经装上了开源系统。我建议你更新到最新版本，因为系统性能在不断提升，bug也被修复。
 
