@@ -3,7 +3,7 @@ layout: post
 title: ad.树莓派课程1.为你的树莓派准备一张sd卡
 comments: yes
 categories:
-- raspberry 
+- raspberry
 tags:
 - raspberry-essons
 ---
