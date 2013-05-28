@@ -3,6 +3,17 @@ title: links
 layout: page
 comments: yes
 ---
+
+[Raspberry and design]
+
+[adafruits](http://learn.adafruit.com/)
+
+[http://raspberrypi.stackexchange.com/](http://raspberrypi.stackexchange.com/)
+
+[raspi.tv](http://raspi.tv/)
+
+[TopCoder](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
+
 [About Linux]
 
 >[Linux Today](http://www.linuxtoday.com/)
@@ -12,17 +23,7 @@ comments: yes
 >[LinuxNow](http://www.linuxnow.com/)
 >
 
-[资源结合帖]
+[Question And Answer]
 
->[Linux资源集结号](http://i-math.sysu.edu.cn/os/about/websites.htm)
-
-[翻译原文主站点]
-
-[adafruits](http://learn.adafruit.com/)
-
-[http://raspberrypi.stackexchange.com/](http://raspberrypi.stackexchange.com/)
-
-[raspi.tv](http://raspi.tv/)
-
-
-
+>[StackOverflow](http://stackoverflow.com/questions)
+>[DreamInCode](http://www.dreamincode.net/forums/)
