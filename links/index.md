@@ -1,7 +1,7 @@
 ---
 title: links
 layout: page
-comments: yes
+comments: no
 ---
 
 [Raspberry and design]
@@ -27,5 +27,6 @@ comments: yes
 
 1. [StackOverflow](http://stackoverflow.com/questions)
 2. [DreamInCode](http://www.dreamincode.net/forums/)
+
 
 
