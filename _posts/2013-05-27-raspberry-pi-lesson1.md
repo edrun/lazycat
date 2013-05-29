@@ -53,5 +53,5 @@ SD卡非常重要，它用于存放你的文件和程序。
 "debian"发行版针对派定制了一些有用的工具，如python编辑器idle,编程学习模拟器scratch等。Adafruit针对PI做了修改，使之能够
 很容易的使用GPIO接口，连接DIY电子产品。
 
-以两点建议的任何一点，都适用于几乎所有Adafruit的所有实验和教程。
+一下两点建议均适用于几乎所有Adafruit网络上所有实验和教程。
 (continue)
