@@ -53,4 +53,11 @@ SD卡非常重要，它用于存放你的文件和程序。
 "debian"发行版针对派定制了一些有用的工具，如python编辑器idle,编程学习模拟器scratch等。Adafruit针对PI做了修改，使之能够
 很容易的使用GPIO接口，连接DIY电子产品。
 
-以下两点建议均适用于几乎所有Adafruit网络上所有实验和教程。
+以下两个系统任何一个都适用于adfruit网站的教程，所以我们推荐你挑选其中一个：
+
+.   raspbian 树莓派推荐的系统，带树莓派标准的默认配置，几乎所有的树莓派都会安装这个系统，[下载地址](http://www.raspberrypi.org/downloads)
+
+.   Occidentalis 这是adafruit针对硬件支持修改的版本。尤其针对懂得如何连接传感器、LED显示器、伺服器等等到他们树莓派的用户使用，
+[下载地址](http://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro/)
+
+
