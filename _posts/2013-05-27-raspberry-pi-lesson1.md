@@ -55,13 +55,13 @@ SD卡非常重要，它用于存放你的文件和程序。
 
 以下两个系统任何一个都适用于adfruit网站的教程，所以我们推荐你挑选其中一个：
 
-.   raspbian 树莓派推荐的系统，带树莓派标准的默认配置，几乎所有的树莓派都会安装这个系统，[下载地址](http://www.raspberrypi.org/downloads)
+.   raspbian 树莓派推荐的系统，拥有树莓派的标准配置，几乎所有的树莓派都会安装这个系统，[下载地址](http://www.raspberrypi.org/downloads)
 
-.   Occidentalis 这是adafruit针对硬件支持修改的版本。尤其针对懂得如何连接传感器、LED显示器、伺服器等等到他们树莓派的用户使用，
+.   Occidentalis 这是adafruit针对硬件支持定制的版本。尤其针对懂得如何将传感器、LED显示器、伺服器等等设备连接到树莓派的用户使用，
 [下载地址](http://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro/)
 
 
-事实上,如果你像我一样，决定让你的文档在一个单独的USB闪存里,买两个SD卡，并都尝试他们，这并不是坏事。
+事实上,如果你和我一样，决定让你的文档在一个单独的USB闪存里,你可以买两张SD卡，并都尝试他们，这并不是坏事。
 
 
 单从表面上来看，这两者之前没有太大的差异。而从它们的表现来看,“Raspbian更合适标准套件使用,而Occidentalis则更多的为电子硬件准备。
@@ -70,6 +70,6 @@ SD卡非常重要，它用于存放你的文件和程序。
 
 顺便说一下，Occidentalis来自树莓派的拉丁文名。
 
-好了，当你选好发行版之后下载img压缩档，如果是.zip文件就将它解压到桌面。
+好了，当你选好发行版之后下载img压缩档，如果是.zip文件先将它解压到桌面。
 
 
