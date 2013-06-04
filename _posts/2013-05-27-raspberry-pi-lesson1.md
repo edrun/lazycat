@@ -36,6 +36,7 @@ SD卡非常重要，它用于存放你的文件和程序。
 <span class="image-1200">[![](/lazycat/05/raspberry/rasp-3.jpg)](http://500px.com/photo/29307621)</span>
 
 
+
 ###下载系统镜像
 
 你必须从网络上下载操作系统，以便于安装到SD卡上。他们通常是.img类型的系统镜像压缩文件。无论你下载什么样的镜像文件
@@ -71,5 +72,29 @@ SD卡非常重要，它用于存放你的文件和程序。
 顺便说一下，Occidentalis来自树莓派的拉丁文名。
 
 好了，当你选好发行版之后下载img压缩档，如果是.zip文件先将它解压到桌面。
+
+###在window vista或者win7制作SD卡系统
+
+这里有一个能在win7和vista上使用的实用SD卡烧写工具。但很不幸，它无法在windows xp上运行。
+
+1.下载fedora ARM安装工具[地址](http://fedoraproject.org/wiki/Fedora_ARM_Installer#Windows_Vista_.26_7)
+
+2.这里将下载一个zip包，你必须对它解压。解压后你会得到一个名为faii-1.0.2-3-x32的文件夹。如果这个文件夹不在程序目录之下，那么你可以直接运行它而无需改变任何权限。只要把它留在桌面就好。
+
+3.弹出多余的诸如usb设备备份硬盘等设备，然后将SD卡插入电脑卡槽或者读卡器。
+
+4.右键单击以管理方式运行fedora-arm-installer.exe.将弹出如下窗口
+
+<span class="image-1200">[![](/media/files/2013/05/raspberry/fail1.jpg)](http://500px.com/photo/29307621)</span>
+
+5.选择镜像和设备。
+可以通过单击浏览选择镜像，并在下拉菜单中选择你要安装的设备来完成。
+<span class="image-1200">[![](/media/files/2013/05/raspberry/fail2.jpg)](http://500px.com/photo/29307621)</span>
+检查设备是否正确，当重新格式话之后，点击安装。
+
+这将花去你几分钟的时间，一旦完成安装时如下：
+<span class="image-1200">[![](/lazycat/05/raspberry/fail3.jpg)](http://500px.com/photo/29307621)</span>
+
+一切准备就绪。你可以在派上使用sd卡了。
 
 
