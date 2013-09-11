@@ -1,0 +1,13 @@
+---
+layout: post
+title: Which do you need?
+category: what's life
+---
+
+h2.   Guitar style
+
+<p>
+* I want the middle,ho~
+</p>
+
+   !/images/Guitar.jpg!

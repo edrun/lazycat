@@ -1,0 +1,141 @@
+---
+title: nokia n9 git环境搭建
+layout: post  
+tags:
+    - n9
+    - git
+    - debian
+---
+
+<script language="javascript" src="/syntaxhighlighter/scripts/shBrushXml.js"></script>
+<script language="javascript" src="/syntaxhighlighter/scripts/shBrushPowerShell.js"></script>
+
+### 概述
+>meego是原生的 linux,当然可以使用很多很多工具。本文基于9+easy debian实现，easy debian 就是arm版本缩减。
+下面给出步骤。
+
+### easy debian install
+
+>什么是easy debian ?请看[easy-debian wiki](http://wiki.maemo.org/Easy_Debian)
+
+> Easy Debian is now packaged to MeeGo Harmattan. 
+[easy-debian install](http://talk.maemo.org/showthread.php?t=85878)
+
+>  It follows Qole (Alan Bruce) previous work : Chroot Scripts for Harmattan Open Mode (where there was a manual "Easy" Debian installation for MeeGo Harmattan), Easy Debian for Fremantle (Maemo 5), Easy Debian for Diablo (Maemo 4) and Easy Debian for Maemo. 
+See also the Easy Debian Wiki. 
+Those links provide a lot of information about Easy Debian images, configuration, etc, being shared between MeeGo and Maemo.
+
+>现在easy debian 可以被meego harmanttan打包使用。
+它依照Qole(Alan bruce)之前的工作：Harmanttan 开发模式的chroot脚本，能够将一个简易的debian系统安装到meego harmattan、fremantle也就是maemo 5,mameo4还有mameo平台上。
+详情请看"easy debian wiki":http://talk.maemo.org/showthread.php?t=85878
+
+
+What is Easy Debian Harmattan ?
+
+> It is an easy way to run Debian (armel) inside MeeGo Harmattan (without rebooting and dual boot) by chrooting a Debian image file. Full desktop Debian softwares are available : LXDE (desktop environment), OpenOffice, GIMP (image editor), Java (J2SE), Abiword (text editor), Gnumeric (spreadsheet), Iceweasel / Firefox (with Java and Flash), Icedove / Thunderbird email client, TeXMaker / LaTeX, many programming languages (C/C++, Python, Fortran, Pascal, Ruby, etc), Octave, Scilab, Gnu R, etc. There are approx. 29,000 Debian packages, but not all work on ARM and Nokia N9/N950 (due to chrooting limitations, ARMEL type, etc). "Search for Debian packages here.":http://www.debian.org/distrib/packages
+
+> Easy Debian Harmattan needs PR1.2 / PR1.3 and works with :
+    - any MeeGo virtual keyboard (thanks to Javispedro xmimd work) when using LXDE, they are translucent except Swype; 
+    - Bluetooth keyboard (with or not btinput from Nokia Store to pair it with your Nokia N9/N950) and Nokia N950's physical keyboard.
+
+那么什么是Harmattan 的easy debian呢？
+
+
+> 它很简便地通过chroot环境加载debian镜像文件到meego harmattan平台上，以此来运行armel debian系统，而无需重启手机或双启动。
+
+所有的debian桌面软件都能使用，如：LXDE (桌面环境), OpenOffice, GIMP (图像处理，很强大), Java (J2SE), Abiword (文档编辑), Gnumeric (数据表处理), Iceweasel / Firefox (with Java and Flash), Icedove / Thunderbird 邮件客户端, TeXMaker / LaTeX, 很多的程序语言 (C/C++, Python, Fortran, Pascal, Ruby, 等等), Octave, Scilab, Gnu R, 等等.
+
+大约有超过29，000个debian包，由于受arm架构和chroot环境的等因素限制，并不是所有的软件包都能在arm和nokia N9/N950上使用。
+
+我们可以从这里找到软件包:
+  [easy debian packages](http://www.debian.org/distrib/packages)
+
+> Easy debian harmanttan要求PR1.2、PR1.3系统，他们可以和一下设备工作：
+感谢javispedro提供的"xmimd":http://talk.maemo.org/showthread.php?t=86069，除了Swype之外，任何meego系统虚拟键盘都能够在Lxde上使用。
+蓝牙键盘（需要借助商城"btinput":http://store.ovi.com.cn/content/251514软件修复），Nokia N950物理键盘。
+
+
+###  Download & Installation :
+
+
+>For using Open Mode Kernel instead of Inception, see post #154.
+
+A) Easier installation :
+Install Inception, see item B-1.
+Use MeeCatalog (available from Nokia Store), enable the "Community Share Repository" (from rzr), update, update. Then search for "easy-deb-chroot" and install version 1.1.0.
+or 
+B) Manual installation:
+The installation has more steps and dependencies because MeeGo Harmattan is more locked than Maemo 4/5 :
+
+> 使用开放模式代替Inception的,"请移步#154":http://talk.maemo.org/showpost.php?p=1256057&postcount=154
+A）更简便的安装：
+安装Inception请见网站item B-1处。
+使用"Meego源":http://store.ovi.com.cn/content/220215 
+（见诺基亚商城），激活"社区共享源"，更新。然后搜索'esay-deb-chroot',安装1.1版本。
+或者
+ 
+  B）手动安装：
+安装过程需要更多的步骤和依赖,因为相比于maemo4/5 Meego有更多的限制。
+
+>  Inception + opensh + aegisctl, even if Harmattan open mode kernel is already installed. 
+If you want, download Inception+opensh+aegisctl together here (Inception.zip zipped file).
+Unzip the .deb files to some directory (e.g., "/home/user") in your Nokia N9/N950.
+Install "inception_0.2.5_armel.deb" by tapping with a file manager or with "# dpkg -i inception_0.2.5_armel.deb" as root in X-Terminal.
+
+>  如果"开放内核":http://talk.maemo.org/showthread.php?t=81579 已被安装就安装下面三个软件。
+"Inception+opensh":http://talk.maemo.org/showthread.php?t=85238
+"aegisctl":http://talk.maemo.org/showthread.php?t=82991
+
+>   Then type in X-Terminal as user :
+$ devel-su -c /usr/sbin/pasiv
+type the root password (default is rootme), then confirm with yes. Then, as user or root :
+<pre>$ /usr/sbin/incept aegisctl_1.3_armel.deb</pre>
+type the root password,
+confirming again the root password.
+
+>  然后以user的身份在X终端中输入：$ devel-su -c /usr/sbin/pasiv
+输入root密码，默认为rootme(你也可以自己更改：linux啦~~)，yes确认。然后以user或者root身份输入：$ /usr/sbin/incept aegisctl_1.3_armel.deb
+输入root密码，并再次确认。
+
+
+>  "Easy Chroot" v0.2 (install this new version) for MeeGo Harmattan, follow the downloading & installing section. I.e., download easy-chroot_0.2.0-1harmattan1_armel.deb and install it in your Nokia N9/N950 by tapping it with a file manager.
+
+> 为Meego安装“easy chroot” v0.2版本这个新版本，按照下载和安装栏目来做。下载完成后用文件管理器打开安装。
+
+
+>  Javispedro solution for using MeeGo virtual keyboard (vkb), now the v1.2 is translucent and works with PR1.2/PR1.3. Download the new xmimd_1.2_armel.deb package to some folder (e.g., "/home/user/") in your Nokia N9/N950 and install it using the X-Terminal :
+<pre>$ devel-su</pre>
+
+> type the root password, then :
+Javispedro的meego虚拟键盘解决方案1.2版本已经出来，并且能够被PR1.2,PRE1.3系统使用，将新的xmimd_1.2_armel.deb包下载到手机指定的文件夹内，如/home/user,然后通过x终端安装。命令如下：
+
+<pre># cd ~user</pre>
+<pre># dpkg -i xmimd_1.2_armel.deb</pre>
+
+
+> download Easy Debian Harmattan : easy-deb-chroot_1.1.0-1harmattan1_armel.deb. Transfer it to some folder (e.g., "/home/user/") in your Nokia N9/N950 and install it by tapping with a file manager, or by typing "dpkg -i easy-deb-chroot_1.1.0-1harmattan1_armel.deb" as root in X-Terminal.
+
+>下载Easy debian harmattan  easy-deb-chroot_1.1.0-1harmattan1_armel.deb软件包，传送到手机相关文件目录下，如/home/user，通过文件管理器点击打开安装或者以root身份在终端安装，输入：dpkg -i easy-deb-chroot_1.1.0-1harmattan1_armel.deb
+
+### install git
+
+点击进入debian chroot：
+	#apt-get update && sudo apt-get install git
+
+添加ssh-key:
+	#su user
+	$ssh-keygen -t rsa -c "mail addr."
+	$cd ~/.ssh
+	$less id_rsa.pub
+	copy上面的内容
+进入github用户主页：
+	setting->ssh scrute->add ssh-key
+name留空，轻点屏幕，粘贴内容即可。
+
+### git使用
+传送门 
+[蒋先生的wordhello](http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html)
+[乃之小文](http://edrun.github.io/2013/05/12/git-usage.html)
+
+### 参考资源
+[mameo wiki & easy-debian wiki](http://wiki.maemo.org/Easy_Debian)

@@ -1,0 +1,31 @@
+---
+layout: post
+title: git入门级用法
+category: github
+---
+<script language="javascript" src="/syntaxhighlighter/scripts/shBrushXml.js"></script>
+<script language="javascript" src="/syntaxhighlighter/scripts/shBrushPowerShell.js"></script>
+
+h2. 基本用法
+
+Github似乎要比svn麻烦些许，以下只回顾常见的几种用法：
+
+* git clone git@github.com:xxx/xxx.github.com.git
+* git init 
+* git add .#这里.表所有文件，可以指定单个或者多个文件
+* git remote rm orgin #下一步报错的话就要先行这一步，建议每次自动吧
+* git remote add orgin git@github.com:xxx/xxx.github.com.git
+* git push origin master #若有错误的话可以先 git pull
+* 更新整个目录
+<p>git pull git@github.com:xxx/xxx.github.com.git</p>
+* 更新单个文件
+<p>
+git fectch
+git checkout origin/master -- path/to/file
+</p>
+* git fectch  参考如下链接
+<p>"Git Fetch拉取他人分支":http://blog.tsnrose.com/blog/2012/04/18/git-fetch/</p>
+
+h2. 参考
+"sunboy_2050":http://blog.csdn.net/sunboy_2050/article/details/7529841
+"teliute":http://teliute.org/mix/Tegit/lesson6/lesson6.html

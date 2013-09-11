@@ -1,0 +1,77 @@
+---
+title: tr用法与Rot13法则
+layout: post
+guid:
+tags:
+  - rot13
+  - shell
+  - tr
+---
+
+tr 用法
+
+1.  大写转小写
+
+    echo "RIHFRFYHGGG"|tr 'A-Z' 'a-z'
+
+2. 删除
+
+    echo "hao123.com"|tr -d '0-9'
+
+3. 隔离
+    
+    echo "hao123.com"|tr -d -c '0-9 \n' 删除除了数字之外的字符
+
+4. 加法
+
+    cat sum.txt|echo $[$(tr '\n' '+') 0]
+    注意：
+    echo $[1+2+3+0] = 6
+    tr将换行符转为+，tr之后sum.txt的数字变为，1+2+3+4+5+，这时必须在末尾补上一数字，否则报错。
+    最终的结果是：cat 显示
+    1
+    2
+    3
+    4
+    5
+    tr之后为echo $[1+2+3+4+5+0]
+    最后输出：15
+<span class="image-1200">[![](/media/files/2013/05/tr-c.jpg)](http://500px.com/photo/29307621)</span>
+
+描述
+
+>
+>[维基](http://zh.wikipedia.org/zh-cn/ROT13)
+
+对于任意x满足以下条件：
+>
+  ROT13(ROT13(x))=ROT26(x)=x
+
+tr实现
+>
+  $echo 'fooman@example.com' | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+
+or
+>
+  $alias rot13='tr '[A-Za-z]' '[N-ZA-Mn-za-m]''
+  $echo 'fooman@example.com' | rot13
+>
+
+其他实现
+>
+  Ruby(1.9+)
+
+  $ ruby -ne 'print $_.tr( "A-Za-z", "N-ZA-Mn-za-m") ' file
+
+>
+  Python
+
+  $ echo "test" | python -c 'import sys; print sys.stdin.read().encode("rot13")'
+
+参考
+I get 10 times more traffic from [用ROT13算法对字符进行加密和解密] [1] than from
+[Rot13 (caesar cipher) rot13加密算法C、C++语言实现] [2] or [using rot13 and tr command for having an encrypted email address] [3].
+
+  [1]: http://www.verydemo.com/demo_c128_i76698.html "用ROT13算法对字符进行加密和解密"
+  [2]: http://www.dreamincode.net/forums/topic/80393-rot13-caesar-cipher/ "Rot13 (caesar cipher) rot13加密算法C、C++语言实现"
+  [3]: http://stackoverflow.com/questions/5442436/using-rot13-and-tr-command-for-having-an-encrypted-email-address "using rot13 and tr command for having an encrypted email address"

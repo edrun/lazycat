@@ -1,0 +1,52 @@
+---
+layout: post
+title: 给github添加ssh key
+category: linux
+---
+
+github添加ssh-key
+
+h2. 在使用github 克隆自己的项目时，出现一下问题
+
+打开终端，执行clone出现错误
+<pre>
+hl@hl-NV57H:~$ git clone git@github.com:edrun/edrun.github.com.git
+Cloning into 'edrun.github.com'...
+The authenticity of host 'github.com (204.232.175.90)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,204.232.175.90' (RSA) to the list of known hosts.
+Permission denied (publickey).
+fatal: The remote end hung up unexpectedly
+hl@hl-NV57H:~$ cd ~/.ssh
+hl@hl-NV57H:~/.ssh$ ls
+known_hosts  known_hosts.old  mer-qt-creator-rsa  mer-qt-creator-rsa.pub
+hl@hl-NV57H:~/.ssh$ 
+</pre>
+
+h2. 添加ssh-key
+
+<pre>
+ssh-keygen -t rsa -C "your_email@example.com"
+cd ~/.ssh
+</pre>
+
+h2. 将id_rsa.pud内容添加到github账户中
+
+</pre>
+gedit id_rsa.pub
+</pre>
+
+h2. 测试
+
+<pre>
+ssh -T git@github.com
+Hi edrun! You've successfully authenticated, but GitHub does not provide shell access.
+</pre>
+
+h2. OK ！！
+
+<pre>
+git clone git@github.com:edrun/edrun.github.com.git
+</pre>
+

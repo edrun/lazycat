@@ -1,0 +1,47 @@
+---
+layout: post
+title: LPI考试认证
+category: certification
+---
+<script language="javascript" src="/syntaxhighlighter/scripts/shBrushXml.js"></script>
+<script language="javascript" src="/syntaxhighlighter/scripts/shBrushPowerShell.js"></script>
+
+# "概述":/#introduction
+# "注册用户":/#sing-up
+# "查找考试点":/#create-ticket
+
+
+h2. <a name="introduction">概述</a>
+
+证书不是目的，发展才是硬道理 ：）
+百度百科上的LPI  "LPI":http://baike.baidu.com/view/1073368.htm/
+官方网站 "LPI.org":http://www.lpi.org/
+
+欲练此功，必先过了LPI1。
+
+h2. <a name="sing-up">注册用户</a>
+
+首先您需要在 "https://cs.lpi.org/caf/Xamman/register":https://cs.lpi.org/caf/Xamman/register 上，注册一个LPI帐号。
+
+
+# 点击register链接注册
+# 填写注册页面中的表单内容
+
+!/images/article/maven/lpi1.png!
+
+
+千万记住：LPI账户和密码。没这个可是考不了试的哦。
+
+h2. <a name="create-ticket">账户状态</a>
+
+# 登录 "https://cs.lpi.org/caf/Xamman/candidate_area":https://cs.lpi.org/caf/Xamman/candidate_area 页面。
+
+!/images/article/maven/lpi1.png!
+
+亲，提前三天报名 ：）
+
+
+h2. 参考资源
+
+"LPI":http://baike.baidu.com/view/1073368.htm/
+"LPI.org":http://www.lpi.org/
