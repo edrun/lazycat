@@ -2,7 +2,7 @@
 layout: post
 title: openwrt编译
 tags:
-	- openwrt
+    - openwrt
 ---
 
 编译环境搭建相关的依赖包请自行google.
