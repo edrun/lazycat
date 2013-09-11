@@ -7,6 +7,7 @@ tags:
 ---
 
 ###ssh权限问题
+
 >
 	1 chmod 600 ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
 	2 chmod 644 ~/.ssh/know_hosts
