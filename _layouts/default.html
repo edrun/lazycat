@@ -32,6 +32,20 @@
 
     <footer>
         <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Copyright 2008 - {{site.time | date:"%Y"}} by <a href="http://edrun.github.io/lazycat/about/">Lazycat</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S %Z"}}</span></small></p>
+
+        <SCRIPT language=javascript>
+function CurentTime(){  
+    var now = new Date();  
+    var hh = now.getHours();  
+    var mm = now.getMinutes();  
+    var ss = now.getTime() % 60000;  
+    ss = (ss - (ss % 1000)) / 1000;  
+    var clock = hh+':';   if (mm < 10) clock += '0';   clock += mm+':';    if (ss < 10) clock += '0';   clock += ss;  return(clock);  
+}  
+function refreshCalendarClock(){  document.all.calendarClock4.innerHTML = CurentTime();  }  
+document.write('<font id="calendarClock4" style="color:#000000;font-family:Arial;font-size:8pt;Line-Height=100%"></font>'); 
+setInterval('refreshCalendarClock()',1000);
+</SCRIPT>
     </footer>
 
     </div>
