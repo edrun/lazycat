@@ -6,7 +6,8 @@ tags:
     - runlevel
 ---
 
-###[system 切换进行级别](http://fedoraproject.org/wiki/Systemd/zh-cn)
+###开始
+[system 切换进行级别](http://fedoraproject.org/wiki/Systemd/zh-cn)
 
 systemd 使用比 sysvinit 的运行级更为自由的 target 概念作为替代。
 
