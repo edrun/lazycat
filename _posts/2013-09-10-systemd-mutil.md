@@ -2,8 +2,8 @@
 layout: post
 title: system启动级别
 tags:
-	- inittab
-	- runlevel
+    - inittab
+    - runlevel
 ---
 
 ###[system 切换进行级别](http://fedoraproject.org/wiki/Systemd/zh-cn)

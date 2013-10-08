@@ -2,8 +2,8 @@
 layout: post
 title: shell特殊字符
 tags:
-	- code
-	- shell
+   - code
+   - shell
 ---
 
 ###几个特殊字符
