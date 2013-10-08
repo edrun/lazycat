@@ -2,8 +2,8 @@
 layout: post
 title: Linux启动
 tags:
-	- 启动
-	- linux
+    - 启动
+    - linux
 ---
 
 操作系统接管硬件之后：

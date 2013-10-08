@@ -2,8 +2,8 @@
 layout: post
 title: slackware
 tags:
-	- code
-	- shell
+    - code
+    - shell
 ---
 >
 
