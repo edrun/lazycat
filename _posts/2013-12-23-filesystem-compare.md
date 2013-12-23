@@ -111,6 +111,7 @@ Cramfs映像通常是放在Flash中，但是也能放在别的文件系统里，
 >
 　　附录：NOR闪存与NAND闪存比较
 
+>
 <table>
    <tr>
       <td>NOR FLASH</td>
