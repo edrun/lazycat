@@ -1,3 +1,11 @@
+---
+layout: post
+title: 嵌入式文件系统（转）
+tags:
+    - linux
+    - fs
+---
+
 ###嵌入式系统文件系统比较 jffs2, yaffs, cramfs, romfs, ramdisk, ramfs/tmpfs
     
 
