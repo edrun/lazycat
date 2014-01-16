@@ -1,5 +1,5 @@
 ---
-layout: _post
+layout: post
 title: MYSQL基本用法
 tags:
     - mysql
