@@ -10,7 +10,7 @@ layout: default
 <span class="categories">
   categories
   {% for cat in page.categories %}
-  <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+  <a href="/lazycat/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
   {% endfor %}
 </span>
 {% endif %}
@@ -19,7 +19,7 @@ layout: default
 <span class="tags">
   tags
   {% for tag in page.tags %}
-  <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
+  <a href="/lazycat/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
   {% endfor %}
 </span>
 {% endif %}
@@ -48,7 +48,7 @@ $(function(){
         }
         else if (e.which == 39 || e.which == 75) {  // Right arrow and K
             {% if page.next %}
-        url = '{{ site.url }}{{ page.next.url }}';
+        url = '/lazycat/{{ site.url }}{{ /lazycat/page.next.url }}';
         {% endif %}
         }
         if (url) {
