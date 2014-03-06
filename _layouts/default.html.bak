@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/media/css/style.css" />
     <link rel="stylesheet" href="/media/css/highlight.css" />
     <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="/media/js/outliner.js"></script>
   </head>
 <!--  <body> 
 -->
@@ -45,21 +44,19 @@
         <header>
         <h1>{{ page.title }}</h1>
         </header>
-        <nav id="real_nav">
+        <nav>
         <span><a title="home" class="" href="/">home</a></span>
         <span><a title="categories" class="" href="/categories/">categories</a></span>
         <span><a title="tags" class="" href="/tags/">tags</a></span>
         <!--<span><a title="友情链接" class="" href="/links/">链接</a></span>-->
         <span><a title="guestbook" class="" href="/guestbook/">guestbook</a></span>
         <span><a title="about" class="" href="/about/">about</a></span>
-        <span><a title="Shell Tricks" class="" href="/stricks/" >Shell Tricks</a></span> 
+<!--        <span><a title="种子订阅" class="" href="/feed/" target="_blank">订阅</a></span> 
+-->
         </nav>
         <article class="content">
         {{ content }}
         </article>
-        <a style="position:fixed;bottom:5px;right:5px;" href="#" title="Back to Top">
-            <img src="/assets/btt.png" />
-        </a> 
       </div>
 
     <footer>
