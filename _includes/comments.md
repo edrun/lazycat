@@ -1,4 +1,4 @@
-<div> class="ds-thread"></div>
+<div class="ds-thread"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"edrun"};
     (function() {
